@@ -273,13 +273,20 @@ section {
   }
 }
 /* =========================
-   HAMBURGER + MOBILE MENU
+   NAVBAR + HAMBURGER
    ========================= */
 
 .nav-left {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+/* Desktop menu */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
 }
 
 /* Hamburger */
@@ -292,14 +299,7 @@ section {
   cursor: pointer;
 }
 
-/* Desktop menu */
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-}
-
-/* MOBILE MENU */
+/* Mobile menu */
 .mobile-menu {
   position: fixed;
   top: 70px;
@@ -320,7 +320,7 @@ section {
   font-size: 16px;
 }
 
-/* MOBILE ONLY */
+/* Mobile only */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
