@@ -366,27 +366,139 @@ section {
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
-  .hero {
+  /* =========================
+     TESTIMONIALS FIX
+     ========================= */
+
+  .testimonials {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .testimonials .left {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .testimonials .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+
+  /* =========================
+     EXPERIENCE / WHY US FIX
+     ========================= */
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .experience .text {
+    max-width: 100%;
+  }
+
+  .experience ul {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  /* =========================
+     CTA FIX
+     ========================= */
+
+  .cta {
     text-align: center;
     padding: 50px 20px;
   }
 
-  .hero-text {
-    max-width: 100%;
+  /* =========================
+     FOOTER FIX
+     ========================= */
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 50px 20px;
   }
 
-  .hero-text h1 {
-    font-size: 32px;
-    line-height: 1.2;
+  .footer div {
+    width: 100%;
+  }
+}
+/* =========================
+   NAVBAR – MOBILE FIX
+   ========================= */
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Mobile menu hidden by default */
+.mobile-menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: #4b1f6f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+  transform: translateY(-120%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 0;
+}
+
+/* Show mobile menu */
+.mobile-menu.show {
+  transform: translateY(0);
+}
+
+/* =========================
+   MOBILE BREAKPOINT
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
   }
 
-  .hero-image {
-    margin-top: 30px;
+  .hamburger {
+    display: block;
   }
 
-  .hero-img {
-    max-width: 280px;
+  .navbar {
+    padding: 16px 20px;
   }
 }
 
