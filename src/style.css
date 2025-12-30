@@ -319,8 +319,10 @@ position: absolute;
 
 /* Mobile Only */
 @media (max-width: 768px) {
-  .nav-links {
+  .navbar ul {
     display: none;
+  }
+}
   }
 
   .hamburger {
