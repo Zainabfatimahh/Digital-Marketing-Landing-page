@@ -179,3 +179,31 @@ section {
   font-weight: 700;
   color: white;
 }
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .hero-img {
+    max-width: 280px;
+  }
+}
+
