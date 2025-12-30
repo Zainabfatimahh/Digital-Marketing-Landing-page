@@ -8,6 +8,7 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         <div className="nav-left">
+          {/* Hamburger (mobile only) */}
           <button
             className="hamburger"
             onClick={() => setOpen(!open)}
@@ -16,6 +17,7 @@ export default function Navbar() {
             ☰
           </button>
 
+          {/* Logo */}
           <div className="logo-container">
             <img src={logo} alt="Growthly" className="logo-img" />
             <span className="logo-text">Growthly</span>
@@ -32,7 +34,7 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      {/* MOBILE MENU (OUTSIDE NAVBAR) */}
+      {/* Mobile menu */}
       {open && (
         <div className="mobile-menu">
           <a href="#home" onClick={() => setOpen(false)}>Home</a>
