@@ -270,3 +270,23 @@ section {
     text-align: center;
   }
 }
+/* ===== MOBILE NAVBAR BEHAVIOR ===== */
+
+/* Default (desktop) */
+.hamburger {
+  display: none;
+}
+
+/* Mobile only */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+  }
+}
