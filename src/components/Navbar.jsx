@@ -6,12 +6,19 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo-container">
-        <img src={logo} alt="Growthly" className="logo-img" />
-        <span className="logo-text">Growthly</span>
+      {/* LEFT: Logo + Hamburger */}
+      <div className="nav-left">
+        <div className="hamburger" onClick={() => setOpen(!open)}>
+          ☰
+        </div>
+
+        <div className="logo-container">
+          <img src={logo} alt="Growthly" className="logo-img" />
+          <span className="logo-text">Growthly</span>
+        </div>
       </div>
 
-      {/* Desktop links */}
+      {/* DESKTOP MENU */}
       <ul className="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
@@ -20,20 +27,15 @@ export default function Navbar() {
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      {/* Hamburger */}
-      <div className="hamburger" onClick={() => setOpen(!open)}>
-        ☰
-      </div>
-
-      {/* Mobile menu */}
+      {/* MOBILE MENU (LIST FORM) */}
       {open && (
-        <div className="mobile-menu">
-          <a href="#home" onClick={() => setOpen(false)}>Home</a>
-          <a href="#services" onClick={() => setOpen(false)}>Services</a>
-          <a href="#testimonials" onClick={() => setOpen(false)}>Case Studies</a>
-          <a href="#experience" onClick={() => setOpen(false)}>Why Us</a>
-          <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
-        </div>
+        <ul className="mobile-menu">
+          <li><a href="#home" onClick={() => setOpen(false)}>Home</a></li>
+          <li><a href="#services" onClick={() => setOpen(false)}>Services</a></li>
+          <li><a href="#testimonials" onClick={() => setOpen(false)}>Case Studies</a></li>
+          <li><a href="#experience" onClick={() => setOpen(false)}>Why Us</a></li>
+          <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
+        </ul>
       )}
     </nav>
   );
