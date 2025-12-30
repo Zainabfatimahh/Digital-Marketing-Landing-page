@@ -179,3 +179,94 @@ section {
   font-weight: 700;
   color: white;
 }
+/* =========================
+   MOBILE RESPONSIVE LAYOUT
+   ========================= */
+
+@media (max-width: 768px) {
+
+  /* ---------- NAVBAR ---------- */
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .navbar ul {
+    display: none; /* hide links for mobile */
+  }
+
+  .logo-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .hero-img {
+    max-width: 280px;
+  }
+
+  /* ---------- SERVICES ---------- */
+  .services {
+    padding: 60px 20px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* ---------- EXPERIENCE ---------- */
+  .experience {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .experience ul {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  /* ---------- CTA ---------- */
+  .cta {
+    padding: 50px 20px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+}
